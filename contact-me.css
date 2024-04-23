@@ -1,0 +1,89 @@
+body {
+    font-family: "Pixelify Sans", sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    font-family: "Pixelify Sans", sans-serif;
+    margin-top: 50px;
+}
+
+.buttons1 {
+    padding: 10px;
+    margin-top: 50px;
+    transition: 0.4s;
+}
+
+.buttons1 a:hover {
+    transition: 0.4s;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 1),
+                0 0 20px rgba(255, 255, 255, 1),
+                0 0 30px rgba(255, 255, 255, 1),
+                0 0 0 30px rgba(255, 255, 255, 0.05),
+                0 0 0 50px rgba(255, 255, 255, 0.05),
+                0 0 0 70px rgba(255, 255, 255, 0.05),
+                0 0 0 90px rgba(255, 255, 255, 0.05);
+}
+
+.buttons1 a {
+    transition: 0.4s;
+    display: block;
+    margin: 20px auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.buttons1 a img {
+    width: 100%;
+}
+
+.instagram {
+    background-color: #000000;
+}
+
+.discord {
+    background-color: #fff;
+}
+
+.linkedin {
+    background-color: #5db7e7;
+}
+
+.email {
+    background-color: #fff;
+}
+
+button {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    top: 50%;
+    margin: 0 20px;
+    font-size: 24px;
+    cursor: pointer;
+    border: none;
+}
+
+.back {
+    font-family: "Pixelify Sans", sans-serif;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    left: 20%;
+    transform: translateX(-50%) translateY(300px);
+    background-color: rgb(238, 208, 255);
+    transition: 0.4s;
+}
+
+.back:hover {
+    background-color: rgb(196, 147, 252);
+    transition: 0.4s;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 1),
+                0 0 20px rgba(255, 255, 255, 1),
+                0 0 30px rgba(255, 255, 255, 1);
+}

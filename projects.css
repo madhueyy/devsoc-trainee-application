@@ -1,0 +1,60 @@
+body {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-family: "Pixelify Sans", sans-serif;
+    opacity: 0;
+    animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.img {
+    display: block;
+    margin: auto;
+    bottom: 0;
+    width: 200px;
+    height: 200px;
+}
+
+button {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    top: 50%;
+    margin: 0 20px;
+    font-size: 24px;
+    cursor: pointer;
+    border: none;
+}
+
+.back {
+    font-family: "Pixelify Sans", sans-serif;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    left: 48%;
+    transform: translateX(-50%) translateY(300px);
+    background-color: rgb(238, 208, 255);
+    transition: 0.4s;
+}
+
+.back:hover {
+    background-color: rgb(196, 147, 252);
+    transition: 0.4s;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 1),
+                0 0 20px rgba(255, 255, 255, 1),
+                0 0 30px rgba(255, 255, 255, 1);
+}

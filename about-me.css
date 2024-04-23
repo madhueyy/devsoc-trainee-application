@@ -1,0 +1,129 @@
+body {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: "Pixelify Sans", sans-serif;
+    opacity: 0;
+    animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+h1 {
+    color: white;
+    filter: drop-shadow(2px 2px 1px #616161);
+    text-align: center;
+}
+
+h2 {
+    color: white;
+    font-size: 30px;
+    filter: drop-shadow(2px 2px 0px #a1a1a1);
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    perspective: 1000px;
+}
+
+.slide {
+    flex: 0 0 auto;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    transform-style: preserve-3d;
+}
+
+.slide-text {
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    filter: drop-shadow(1px 1px 0px #adadad);
+}
+
+button {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    top: 50%;
+    margin: 0 20px;
+    font-size: 24px;
+    cursor: pointer;
+    border: none;
+}
+
+.back {
+    font-family: "Pixelify Sans", sans-serif;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    left: 50%;
+    transform: translateX(-50%) translateY(300px);
+    background-color: rgb(238, 208, 255);
+    transition: 0.4s;
+}
+
+.back:hover {
+    background-color: rgb(196, 147, 252);
+    transition: 0.4s;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 1),
+                0 0 20px rgba(255, 255, 255, 1),
+                0 0 30px rgba(255, 255, 255, 1);
+}
+
+.next {
+    font-family: "Pixelify Sans", sans-serif;
+    right: 0;
+    background-color: rgb(243, 182, 202);
+    transition: 0.4s;
+}
+
+.next:hover {
+    background-color: rgb(209, 75, 120);
+    transition: 0.4s;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 1),
+                0 0 20px rgba(255, 255, 255, 1),
+                0 0 30px rgba(255, 255, 255, 1);
+}
+
+.prev {
+    font-family: "Pixelify Sans", sans-serif;
+    left: 0;
+    background-color: rgb(243, 182, 202);
+    transition: 0.4s;
+}
+
+.prev:hover {
+    background-color: rgb(209, 75, 120);
+    transition: 0.4s;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 1),
+                0 0 20px rgba(255, 255, 255, 1),
+                0 0 30px rgba(255, 255, 255, 1);
+}
+
+.img {
+    width: 400px;
+    height: 400px;
+}
+
+.img-dog {
+    width: 400px;
+    height: 400px;
+}
